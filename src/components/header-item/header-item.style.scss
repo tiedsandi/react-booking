@@ -1,0 +1,12 @@
+@use '../../scss/' as *;
+
+.header-list-item {
+	@include flex(center,'');
+	gap: 10px;
+}
+
+.header-list-item.active {
+	border: 1px solid $white;
+	padding: 10px;
+	border-radius: 20px;
+}

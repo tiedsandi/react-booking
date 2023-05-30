@@ -1,9 +1,15 @@
-import './home.style.scss'
+import './home.style.scss';
+
+import Navbar from '../../components/navbar/navbar.component';
+import Header from '../../components/header/header.component';
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+	return (
+		<div>
+			<Navbar />
+			<Header />
+		</div>
+	);
+};
 
-export default Home
+export default Home;
