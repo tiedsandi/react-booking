@@ -8,6 +8,8 @@ import {
 import Home from "./pages/home/home.component";
 import List from "./pages/list/list.component";
 
+import './App.style.scss'
+
 
 const router = createBrowserRouter([
   { path: "*", Component: Root },
