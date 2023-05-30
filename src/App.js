@@ -5,8 +5,9 @@ import {
   Routes,
 } from "react-router-dom";
 
-import Home from "./pages/home/Home";
-import List from "./pages/list/List";
+import Home from "./pages/home/home.component";
+import List from "./pages/list/list.component";
+
 
 const router = createBrowserRouter([
   { path: "*", Component: Root },
