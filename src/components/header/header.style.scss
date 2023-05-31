@@ -4,6 +4,11 @@
 	background-color: $main-color;
 	color: $white;
 	@include flex('', center);
+	position: relative;
+
+	.header-container.list-mode {
+		margin: 20px 0 0px 0px;
+	}
 
 	.header-container {
 		max-width: $max-width;
