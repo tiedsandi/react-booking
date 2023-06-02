@@ -1,0 +1,29 @@
+@use "../../scss/" as *;
+
+.footer {
+	width: 100%;
+	width: 1024px;
+	font-size: 12px;
+
+	.f-lists {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+
+		.f-list {
+			list-style: none;
+			padding: 0;
+		}
+
+		.f-list-item {
+			margin-bottom: 10px;
+			color: $main-color;
+			cursor: pointer;
+		}
+	}
+
+	.f-text {
+		text-align: center;
+	}
+}
