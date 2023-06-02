@@ -1,13 +1,13 @@
-import { DateRange } from 'react-date-range';
+import { DateRange } from "react-date-range";
 
 const RangeDate = ({ date, setDate }) => {
 	return (
 		<DateRange
 			editableDateInputs={true}
-			onChange={(item) => setDate([ item.selection ])}
+			onChange={(item) => setDate([item.selection])}
 			moveRangeOnFirstSelection={false}
 			ranges={date}
-			className='date'
+			className="date"
 		/>
 	);
 };

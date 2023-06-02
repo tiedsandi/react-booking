@@ -1,0 +1,9 @@
+@use "../../scss/" as *;
+
+.featured {
+	width: 100%;
+	max-width: $max-width;
+	@include flex("", space-between);
+	gap: 20px;
+	z-index: 1;
+}

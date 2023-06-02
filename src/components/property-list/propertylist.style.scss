@@ -1,0 +1,7 @@
+@use "../../scss/" as *;
+.p-list {
+	width: 100%;
+	max-width: $max-width;
+	@include flex("", space-between);
+	gap: 20px;
+}

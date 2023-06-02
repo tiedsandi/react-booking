@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@use "../../scss/" as *;
 
 .header-search {
 	height: 30px;
@@ -17,7 +17,7 @@
 	}
 
 	.header-search-item {
-		@include flex (center, '');
+		@include flex(center, "");
 		gap: 10px;
 
 		.header-search-input {
@@ -33,6 +33,7 @@
 		.date {
 			position: absolute;
 			top: 50px;
+			z-index: 2;
 		}
 
 		.options {
@@ -43,14 +44,15 @@
 			border-radius: 5px;
 			-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
 			box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+			z-index: 2;
 
 			.option-item {
 				width: 200px;
-				@include flex('',space-between);
+				@include flex("", space-between);
 				margin: 10px;
 
 				.option-counter {
-					@include flex(center,'');
+					@include flex(center, "");
 					gap: 10px;
 					font-size: 12px;
 					color: $black;

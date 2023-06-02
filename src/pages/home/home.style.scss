@@ -1,0 +1,13 @@
+@use "../../scss/" as *;
+
+.home-container {
+	margin-top: 50px;
+	@include flex(center, "");
+	flex-direction: column;
+	gap: 30px;
+
+	.home-title {
+		width: $max-width;
+		font-size: 24px;
+	}
+}

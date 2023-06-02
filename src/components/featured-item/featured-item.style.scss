@@ -1,0 +1,19 @@
+@use "../../scss/" as *;
+
+.featured-item {
+	position: relative;
+	color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	height: 250px;
+
+	.featured-img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.featured-titles {
+		position: absolute;
+		bottom: 52px;
+	}
+}
