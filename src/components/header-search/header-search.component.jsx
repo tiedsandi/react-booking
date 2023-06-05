@@ -11,10 +11,11 @@ import {
 import "./header-search.style.scss";
 import Option from "../option/option.component";
 import RangeDate from "../range-date/range-date.component";
+import { useNavigate } from "react-router-dom";
 
 const HeaderSearch = () => {
+	const [destination, setDestination] = useState("");
 	const [openDate, setOpenDate] = useState(false);
-
 	const [date, setDate] = useState([
 		{
 			startDate: new Date(),
@@ -31,6 +32,12 @@ const HeaderSearch = () => {
 		room: 1
 	});
 
+	const navigate = useNavigate();
+
+	const handleSearch = () => {
+		navigate("/hotels", { state: { destination, date, options } });
+	};
+
 	return (
 		<div className="header-search">
 			<div className="header-search-item">
@@ -39,6 +46,7 @@ const HeaderSearch = () => {
 					type="text"
 					placeholder="Where are you going?"
 					className="header-search-input"
+					onChange={(e) => setDestination(e.target.value)}
 				/>
 			</div>
 			<div className="header-search-item">
@@ -61,7 +69,9 @@ const HeaderSearch = () => {
 				{openOptions && <Option options={options} setOptions={setOptions} />}
 			</div>
 			<div className="header-search-item">
-				<button className="header-btn">Search</button>
+				<button className="header-btn" onClick={handleSearch}>
+					Search
+				</button>
 			</div>
 		</div>
 	);

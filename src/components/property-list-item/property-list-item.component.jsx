@@ -2,7 +2,6 @@ import "./property-list-item.style.scss";
 
 const PropertyListItem = ({ data }) => {
 	const { src, h1, h2 } = data;
-	console.log(data);
 	return (
 		<div className="p-list-item">
 			<img src={src} alt="unsplash-img" className="p-list-img" />
