@@ -1,12 +1,12 @@
 import "./list.style.scss";
 import { format } from "date-fns";
 
-import Navbar from "../../components/navbar/navbar.component";
-import Header from "../../components/header/header.component";
+import Navbar from "../../components/Navbar/navbar.component";
+import Header from "../../components/Header/header.component";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import RangeDate from "../../components/range-date/range-date.component";
-import SearchItem from "../../components/search-item/search-item.component";
+import RangeDate from "../../components/RangeDate/range-date.component";
+import SearchItem from "../../components/SearchItem/search-item.component";
 
 const List = () => {
 	const location = useLocation();
@@ -15,6 +15,8 @@ const List = () => {
 	const [options, setOptions] = useState(location.state.options);
 	/* @audit-info buat useContext? */ const [openDate, setOpenDate] =
 		useState(false);
+
+	// @audit-info masih berantakan
 
 	return (
 		<div>

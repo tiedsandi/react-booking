@@ -5,11 +5,11 @@ import {
 	Routes
 } from "react-router-dom";
 
-import Home from "./pages/home/home.component";
-import List from "./pages/list/list.component";
+import Home from "./pages/Home/home.component";
+import List from "./pages/Hotels/list.component";
 
 import "./App.style.scss";
-import Hotel from "./pages/hotel/hotel.component";
+import Hotel from "./pages/HotelsDetails/hotel.component";
 
 const router = createBrowserRouter([{ path: "*", Component: Root }]);
 

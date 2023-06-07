@@ -9,8 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./header-search.style.scss";
-import Option from "../option/option.component";
-import RangeDate from "../range-date/range-date.component";
+import Option from "../Option/option.component";
+import RangeDate from "../RangeDate/range-date.component";
 import { useNavigate } from "react-router-dom";
 
 const HeaderSearch = () => {
@@ -23,6 +23,7 @@ const HeaderSearch = () => {
 			key: "selection"
 		}
 	]);
+	// @audit-info masih berantakan
 
 	const [openOptions, setOpenOptions] = useState(false);
 

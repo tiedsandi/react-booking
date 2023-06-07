@@ -1,4 +1,4 @@
-import PropertyListItem from "../property-list-item/property-list-item.component";
+import PropertyListItem from "../PropertyListItem/property-list-item.component";
 import "./propertylist.style.scss";
 
 const datas = [

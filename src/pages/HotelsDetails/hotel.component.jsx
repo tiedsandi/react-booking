@@ -1,8 +1,8 @@
 import "./hotel.style.scss";
-import MailList from "../../components/mail-list/mail-list.component";
-import Footer from "../../components/footer/footer.component";
-import Header from "../../components/header/header.component";
-import Navbar from "../../components/navbar/navbar.component";
+import MailList from "../../components/MailList/mail-list.component";
+import Footer from "../../components/Footer/footer.component";
+import Header from "../../components/Header/header.component";
+import Navbar from "../../components/Navbar/navbar.component";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -43,6 +43,7 @@ const Hotel = () => {
 		setOpen(true);
 	};
 
+	// @audit-info masih berantakan bisa dipisahkan logika slidenya
 	const handleMove = (direction) => {
 		let newSlideNumber;
 

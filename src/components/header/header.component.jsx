@@ -1,4 +1,4 @@
-import HeaderItem from "../header-item/header-item.component";
+import HeaderItem from "../HeaderItem/header-item.component";
 
 import "./header.style.scss";
 import "react-date-range/dist/styles.css"; // main css file
@@ -10,7 +10,7 @@ import {
 	faPlane,
 	faTaxi
 } from "@fortawesome/free-solid-svg-icons";
-import HeaderSearch from "../header-search/header-search.component";
+import HeaderSearch from "../HeaderSearch/header-search.component";
 
 const Header = ({ type }) => {
 	return (

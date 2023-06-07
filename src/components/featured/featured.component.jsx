@@ -1,4 +1,4 @@
-import FeaturedItem from "../featured-item/featured-item.component";
+import FeaturedItem from "../FeaturedItem/featured-item.component";
 import "./featured.style.scss";
 
 const datas = [

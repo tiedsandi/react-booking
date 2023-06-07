@@ -1,5 +1,6 @@
-import FeaturedPropertiesItem from "../featured-propeties-item/featured-propeties-item.component";
+import FeaturedPropertiesItem from "../FeaturedPropetiesItem/featured-propeties-item.component";
 import "./featured-properties.style.scss";
+
 const datas = [
 	{
 		id: 1,
